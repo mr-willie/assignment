@@ -1,14 +1,10 @@
-# 从键盘输入一个列表，列表元素之间用空格分隔
-user_input = input("请输入一个列表（元素之间用空格分隔）: ")
+yonghushuru = input("输入列表数字，每个元素用空格隔开: ")
 
-# 使用 split 方法将输入的字符串分割成一个列表，并将每个元素转换为浮点数
-number_list = [float(num) for num in user_input.split()]
+#把字符串转化成可计算的数字
+liebiao = [float(num) for num in yonghushuru.split()]
 
-# 计算列表元素的和
-total_sum = sum(number_list)
+zonghe = sum(liebiao)
 
-# 计算平均值
-average = total_sum / len(number_list)
+average = zonghe / len(liebiao)
 
-# 输出平均值
-print(f"列表元素的平均值为: {average}")
+print(f"平均值为: {average}")
